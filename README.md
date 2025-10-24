@@ -15,9 +15,6 @@
 
 Baixar os arquivos do GitHub.
 ```
-git clone <repositorio_url> .
-```
-```
 git clone https://github.com/celkecursos/tutorial-laravel12-vuejs.git .
 ```
 
