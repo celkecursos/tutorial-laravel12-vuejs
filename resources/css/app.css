@@ -90,76 +90,77 @@
 }
 
 :root {
-    --background: hsl(0 0% 100%);
-    --foreground: hsl(0 0% 3.9%);
+    --background: hsl(220 15% 97%);
+    --foreground: hsl(220 15% 10%);
     --card: hsl(0 0% 100%);
-    --card-foreground: hsl(0 0% 3.9%);
+    --card-foreground: hsl(220 15% 10%);
     --popover: hsl(0 0% 100%);
-    --popover-foreground: hsl(0 0% 3.9%);
-    --primary: hsl(0 0% 9%);
-    --primary-foreground: hsl(0 0% 98%);
-    --secondary: hsl(0 0% 92.1%);
-    --secondary-foreground: hsl(0 0% 9%);
-    --muted: hsl(0 0% 96.1%);
-    --muted-foreground: hsl(0 0% 45.1%);
-    --accent: hsl(0 0% 96.1%);
-    --accent-foreground: hsl(0 0% 9%);
-    --destructive: hsl(0 84.2% 60.2%);
+    --popover-foreground: hsl(220 15% 10%);
+    --primary: hsl(213 88% 34%); /* azul Docker */
+    --primary-foreground: hsl(0 0% 100%);
+    --secondary: hsl(220 16% 90%);
+    --secondary-foreground: hsl(220 20% 10%);
+    --muted: hsl(220 16% 92%);
+    --muted-foreground: hsl(220 8% 45%);
+    --accent: hsl(213 90% 40%);
+    --accent-foreground: hsl(0 0% 100%);
+    --destructive: hsl(0 84% 60%);
     --destructive-foreground: hsl(0 0% 98%);
-    --border: hsl(0 0% 92.8%);
-    --input: hsl(0 0% 89.8%);
-    --ring: hsl(0 0% 3.9%);
-    --chart-1: hsl(12 76% 61%);
-    --chart-2: hsl(173 58% 39%);
-    --chart-3: hsl(197 37% 24%);
-    --chart-4: hsl(43 74% 66%);
-    --chart-5: hsl(27 87% 67%);
+    --border: hsl(220 14% 85%);
+    --input: hsl(220 14% 90%);
+    --ring: hsl(213 90% 40%);
+    --chart-1: hsl(213 88% 34%);
+    --chart-2: hsl(160 50% 40%);
+    --chart-3: hsl(30 80% 50%);
+    --chart-4: hsl(280 65% 55%);
+    --chart-5: hsl(340 70% 55%);
     --radius: 0.5rem;
-    --sidebar-background: hsl(0 0% 98%);
-    --sidebar-foreground: hsl(240 5.3% 26.1%);
-    --sidebar-primary: hsl(0 0% 10%);
-    --sidebar-primary-foreground: hsl(0 0% 98%);
-    --sidebar-accent: hsl(0 0% 94%);
-    --sidebar-accent-foreground: hsl(0 0% 30%);
-    --sidebar-border: hsl(0 0% 91%);
-    --sidebar-ring: hsl(217.2 91.2% 59.8%);
-    --sidebar: hsl(0 0% 98%);
+
+    --sidebar-background: hsl(220 15% 96%);
+    --sidebar-foreground: hsl(220 15% 20%);
+    --sidebar-primary: hsl(213 88% 34%);
+    --sidebar-primary-foreground: hsl(0 0% 100%);
+    --sidebar-accent: hsl(220 16% 92%);
+    --sidebar-accent-foreground: hsl(220 15% 15%);
+    --sidebar-border: hsl(220 15% 85%);
+    --sidebar-ring: hsl(213 90% 40%);
+    --sidebar: hsl(220 15% 96%);
 }
 
 .dark {
-    --background: hsl(0 0% 3.9%);
+    --background: hsl(220 20% 8%);
     --foreground: hsl(0 0% 98%);
-    --card: hsl(0 0% 3.9%);
+    --card: hsl(220 20% 10%);
     --card-foreground: hsl(0 0% 98%);
-    --popover: hsl(0 0% 3.9%);
+    --popover: hsl(220 20% 10%);
     --popover-foreground: hsl(0 0% 98%);
-    --primary: hsl(0 0% 98%);
-    --primary-foreground: hsl(0 0% 9%);
-    --secondary: hsl(0 0% 14.9%);
+    --primary: hsl(213 88% 50%);
+    --primary-foreground: hsl(0 0% 100%);
+    --secondary: hsl(220 15% 20%);
     --secondary-foreground: hsl(0 0% 98%);
-    --muted: hsl(0 0% 16.08%);
-    --muted-foreground: hsl(0 0% 63.9%);
-    --accent: hsl(0 0% 14.9%);
-    --accent-foreground: hsl(0 0% 98%);
+    --muted: hsl(220 15% 22%);
+    --muted-foreground: hsl(0 0% 65%);
+    --accent: hsl(213 88% 50%);
+    --accent-foreground: hsl(0 0% 100%);
     --destructive: hsl(0 84% 60%);
     --destructive-foreground: hsl(0 0% 98%);
-    --border: hsl(0 0% 14.9%);
-    --input: hsl(0 0% 14.9%);
-    --ring: hsl(0 0% 83.1%);
-    --chart-1: hsl(220 70% 50%);
+    --border: hsl(220 15% 20%);
+    --input: hsl(220 15% 22%);
+    --ring: hsl(213 88% 50%);
+    --chart-1: hsl(213 88% 50%);
     --chart-2: hsl(160 60% 45%);
     --chart-3: hsl(30 80% 55%);
     --chart-4: hsl(280 65% 60%);
     --chart-5: hsl(340 75% 55%);
-    --sidebar-background: hsl(0 0% 7%);
-    --sidebar-foreground: hsl(0 0% 95.9%);
-    --sidebar-primary: hsl(360, 100%, 100%);
+    --sidebar-background: hsl(220 20% 6%);
+    --sidebar-foreground: hsl(0 0% 98%);
+    --sidebar-primary: hsl(213 88% 50%);
     --sidebar-primary-foreground: hsl(0 0% 100%);
-    --sidebar-accent: hsl(0 0% 15.9%);
-    --sidebar-accent-foreground: hsl(240 4.8% 95.9%);
-    --sidebar-border: hsl(0 0% 15.9%);
-    --sidebar-ring: hsl(217.2 91.2% 59.8%);
-    --sidebar: hsl(240 5.9% 10%);
+    --sidebar-accent: hsl(220 15% 15%);
+    --sidebar-accent-foreground: hsl(0 0% 98%);
+    --sidebar-border: hsl(220 15% 18%);
+    --sidebar-ring: hsl(213 88% 50%);
+    --sidebar: hsl(220 20% 8%);
 }
 
 @layer base {
@@ -169,4 +170,169 @@
     body {
         @apply bg-background text-foreground;
     }
+    
+    /****** Início Conteúdo Principal ******/
+    .content-box {
+        @apply shadow-lg sm:rounded-b-lg text-gray-900 p-4 dark:text-gray-200;
+    }
+
+    .content-box-header {
+        @apply flex justify-between items-center border-b-2 border-gray-100 pb-2 mb-3 dark:border-border;
+    }
+
+    .content-box-title {
+        @apply text-base font-semibold text-gray-600 dark:text-gray-400;
+    }
+
+    .content-box-btn {
+        @apply flex space-x-1;
+    }
+
+    /****** Fim Conteúdo Principal ******/
+
+    /****** Inicio Tabela Listar Registros ******/
+    .table-container {
+        @apply overflow-hidden sm:rounded-lg bg-white shadow-sm dark:bg-gray-950;
+    }
+
+    .table {
+        @apply min-w-full divide-y divide-gray-200 border-separate border-spacing-0 dark:divide-border;
+    }
+
+    .table-header {
+        @apply bg-gray-50 dark:bg-gray-950;
+    }
+
+    .table-row-header {
+        @apply px-6 py-3 text-left text-sm font-medium text-gray-500 tracking-wider border-b border-gray-200 dark:border-border dark:text-gray-300;
+    }
+
+    .table-header.center {
+        @apply text-center;
+    }
+
+    .table-body {
+        @apply hover:bg-gray-50 dark:hover:bg-background;
+    }
+
+    .table-row-body {
+        @apply px-6 py-2 text-sm text-gray-950 border-b border-gray-200 dark:text-gray-300 dark:border-border break-all;
+    }
+
+    .table-actions {
+        @apply px-6 py-2 text-sm text-gray-950 border-b border-gray-200 dark:text-gray-300 dark:border-border text-center table-cell;
+    }
+
+    .table-actions-align {
+        @apply flex flex-row space-x-1 items-center justify-center;
+    }
+
+    /****** Fim Tabela Listar Registros ******/
+
+    /****** Início Detalhes registro ******/
+
+    /* Caixa para apresentar os detalhes do registro */
+    .detail-box {
+        @apply text-sm overflow-hidden sm:rounded-lg bg-white shadow-sm dark:bg-gray-950 p-6 space-y-4;
+    }
+
+    /* Detalhes do registro */
+    .title-detail-content {
+        @apply font-semibold dark:text-gray-400;
+    }
+
+    /* Detalhes do registro */
+    .detail-content {
+        @apply dark:text-gray-300;
+    }
+
+    /****** Fim Detalhes registro ******/
+
+    /****** Início Formulário ******/
+
+    /* Label dos inputs */
+    .form-label {
+        @apply text-gray-600 block text-sm font-semibold dark:text-gray-300;
+    }
+
+    /* Input padrão */
+    .form-input {
+        @apply border p-2 w-full mt-1 rounded-md border-gray-200 shadow-sm focus:border-gray-300 focus:ring focus:ring-gray-200 focus:outline-none dark:border-gray-600 dark:text-gray-200 dark:placeholder-gray-400;
+    }
+
+    /* Input checkbox */
+    .form-input-checkbox {
+        @apply text-sm text-gray-500 dark:text-gray-400;
+    }
+
+    /* Texto campo obrigatório */
+    .required-field {
+        @apply text-xs text-gray-600 dark:text-gray-500;
+    }
+
+    /* Mensagem de erro no campo */
+    .form-error {
+        @apply text-red-500 text-sm;
+    }
+
+    /****** Fim Formulário ******/
+
+    /****** Início Botões ******/
+    /* Botão azul */
+    .btn-primary {
+        @apply bg-blue-500 text-white text-sm px-2 py-1 rounded hover:bg-blue-600 transition-colors cursor-pointer;
+    }
+
+    /* Botão azul médio */
+    .btn-primary-md {
+        @apply bg-blue-500 text-white text-base px-2 py-1 rounded hover:bg-blue-600 transition-colors cursor-pointer;
+    }
+
+    /* Botão azul claro */
+    .btn-info {
+        @apply bg-cyan-500 text-white text-sm px-2 py-1 rounded hover:bg-cyan-600 transition-colors cursor-pointer;
+    }
+
+    /* Botão azul claro */
+    .btn-info-md {
+        @apply bg-cyan-500 text-white text-base px-2 py-1 rounded hover:bg-cyan-600 transition-colors cursor-pointer;
+    }
+
+    /* Botão verde */
+    .btn-success {
+        @apply bg-green-500 text-white text-sm px-2 py-1 rounded hover:bg-green-600 transition-colors cursor-pointer;
+    }
+
+    /* Botão verde */
+    .btn-success-md {
+        @apply bg-green-500 text-white text-base px-2 py-1 rounded hover:bg-green-600 transition-colors cursor-pointer;
+    }
+
+    /* Botão amarelo */
+    .btn-warning {
+        @apply bg-yellow-500 text-white text-sm px-2 py-1 rounded hover:bg-yellow-600 transition-colors cursor-pointer;
+    }
+
+    /* Botão amarelo */
+    .btn-warning-md {
+        @apply bg-yellow-500 text-white text-base px-2 py-1 rounded hover:bg-yellow-600 transition-colors cursor-pointer;
+    }
+
+    /* Botão vermelho */
+    .btn-danger {
+        @apply bg-red-500 text-white text-sm px-2 py-1 rounded hover:bg-red-600 transition-colors cursor-pointer;
+    }
+
+    /* Botão vermelho médio */
+    .btn-danger-md {
+        @apply bg-red-500 text-white text-base px-2 py-1 rounded hover:bg-red-600 transition-colors cursor-pointer;
+    }
+
+    /* Alinha os botões em linha */
+    .align-icon-btn {
+        @apply flex items-center space-x-1;
+    }
+
+    /****** Fim Botões ******/
 }
+

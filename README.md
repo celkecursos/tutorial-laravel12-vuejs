@@ -54,6 +54,11 @@ Executar as migrations para criar as tabelas e as colunas.
 php artisan migrate
 ```
 
+Executar as seeders para cadastrar os dados de teste.
+```
+php artisan db:seed
+```
+
 Rodar o projeto local.
 ```
 composer run dev
@@ -112,6 +117,38 @@ http://127.0.0.1:8000
 ```
 
 Traduzir para português [Módulo pt-BR](https://github.com/lucascudo/laravel-pt-BR-localization)
+
+Criar migration para criar a tabela no banco de dados.
+```
+php artisan make:migration create_nome_table
+```
+```
+php artisan make:migration create_tasks_table --create=tasks
+```
+
+Criar a Models. A models é usada para gerenciar a tabela do banco de dados através do Eloquent ORM.
+```
+php artisan make:model NomeDaModel
+```
+```
+php artisan make:model Task
+```
+
+Criar Seed para cadastrar dados de teste.
+```
+php artisan make:seeder NomeSeeder
+```
+```
+php artisan make:seeder TaskSeeder
+```
+
+Criar a Controller.
+```
+php artisan make:controller NomeController
+```
+```
+php artisan make:controller Tasks/TaskController
+```
 
 ## Autor
 

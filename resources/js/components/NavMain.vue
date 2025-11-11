@@ -9,6 +9,20 @@ import {
 import { urlIsActive } from '@/lib/utils';
 import { type NavItem } from '@/types';
 import { Link, usePage } from '@inertiajs/vue3';
+import { CalendarCheck2, HomeIcon } from 'lucide-vue-next';
+
+const items: NavItem[] = [
+    {
+        title: 'Dashboard',
+        href: '/dashboard',
+        icon: HomeIcon
+    },
+    {
+        title: 'Tarefas',
+        href: '/tasks',
+        icon: CalendarCheck2
+    }
+]
 
 defineProps<{
     items: NavItem[];
