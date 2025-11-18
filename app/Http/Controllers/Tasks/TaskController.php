@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Tasks;
 
 use App\Http\Controllers\Controller;
 use App\Models\Task;
+use Carbon\Carbon;
 use Exception;
 use Illuminate\Http\Request;
 use Inertia\Inertia;
@@ -13,15 +14,33 @@ class TaskController extends Controller
     /**
      * Listar as tarefas
      */
-    public function index()
+    public function index(Request $request)
     {
 
         // Recuperar as tarefas do banco de dados
-        $tasks = Task::orderBy('started_at', 'ASC')->paginate(10);
+        // $tasks = Task::orderBy('started_at', 'ASC')->paginate(10);
+        $tasks = Task::when(
+            $request->filled('name'),
+            fn($query) => $query->whereLike('name', '%' . $request->name . '%')
+        )
+        ->when(
+            $request->filled('started_at'),
+            fn($query) => $query->where('started_at', '>=', Carbon::parse($request->started_at))
+        )
+        ->when(
+            $request->filled('finished_at'),
+            fn($query) => $query->where('finished_at', '<=', Carbon::parse($request->finished_at))
+        )
+        ->orderBy('started_at', 'ASC')
+        ->paginate(10)
+        ->withQueryString();
 
         // Enviar os dados diretamente para a view
         return Inertia::render('tasks/Index', [
             'tasks' => $tasks,
+            'name' => $request->name,
+            'started_at' => $request->started_at,
+            'finished_at' => $request->finished_at,
         ]);
     }
 

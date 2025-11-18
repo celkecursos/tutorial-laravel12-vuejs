@@ -69,6 +69,16 @@ Acessar a página criada com Laravel.
 http://127.0.0.1:8000
 ```
 
+Limpar o cache quando a tela ficar em branco.
+```
+php artisan route:clear
+php artisan view:clear
+php artisan config:clear
+php artisan cache:clear
+php artisan optimize:clear
+```
+- Reiniciar o servidor.
+
 ## Sequência para criar o projeto
 
 Instalar o Laravel no computador.
